@@ -1,0 +1,27 @@
+<html>
+	<title>Lightbox</title>
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="lib/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="src/lightbox.js"></script>
+
+	<body>
+		<div class="container">
+			<div class="show">
+				<img src="images/1_b.jpg" alt="" class="lightbox" href="images/1_b.jpg">
+			</div>
+			<div class="gallery">
+				<img src="images/1_s.jpg" href="images/1_b.jpg" alt="" class="forlightbox lightbox">
+				<img src="images/2_s.jpg" href="images/2_b.jpg" alt="" class="forlightbox lightbox">
+				<img src="images/3_s.jpg" href="images/3_b.jpg" alt="" class="forlightbox lightbox">
+				<img src="images/4_s.jpg" href="images/4_b.jpg" alt="" class="forlightbox lightbox">
+				<img src="images/5_s.jpg" href="images/5_b.jpg" alt="" class="forlightbox lightbox">
+			</div>
+		</div>
+		<script>
+			jQuery(document).ready(function($) {
+				$(".lightbox").lightbox();	
+			});
+		</script>
+	</body>
+</html>
